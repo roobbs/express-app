@@ -3,9 +3,9 @@ extends layout
 block content
   h1= title
   if book_list.length
-    ul
+    ul.displayBooks
       each book in book_list
-        li
+        li.bookItem
           a(href=book.url) #{book.title}
           |  (#{book.author.name})
           
